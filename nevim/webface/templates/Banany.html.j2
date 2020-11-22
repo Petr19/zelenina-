@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <title>Nijak: {{title}}</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" 
+        href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+
+<nav>
+  
+  <ul>
+    <li><a href="{{url_for('index')}}">Index</a></li>
+    <li><a href="{{url_for('info')}}">Info</a></li>
+    <li><a href="{{url_for('kvetak')}}">Květák</a></li>
+    <li><a href="{{url_for('kapusta')}}">Kapusta</a></li>
+    <li><a href="{{url_for('banany')}}">Banány</a></li>
+  </ul>
+
+  <p><img src="{{url_for('static', filename='banany.png')}}" alt="#"/>
+
+
+</nav>
+
+
+{% block obsah %}
+<main>
+<h1>Banány</h1>
+
+{% endblock obsah %}
+</main>
+</body></html>
